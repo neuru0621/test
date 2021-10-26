@@ -1,0 +1,20 @@
+//* https://www.staging-typescript.org/tsconfig
+//package.json의 tsc를 해당 형식에 따라 실행함
+//"include": ["src/**/*"] SRC 폴더 내 모든 파일을 컴파일하겠다
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES5",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "incremental": true
+  },
+  "include": ["src/**/*"]
+}
